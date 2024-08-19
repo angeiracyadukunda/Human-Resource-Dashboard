@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payslip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>UiUxOtor</h2>
+                <p>ERP System</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#dashboard"><img src="images/dash.svg" alt="Dashboard Icon">Dashboard</a></li>
+                    <li>
+                        <a href="./payroolMana.html" >
+                          <i class="fa fa-wallet"></i> Payroll Management
+                        </a>
+                      </li>
+                      
+                    <li><a href="./payroolChange.html"><i class="fa fa-exchange-alt"></i> Payroll Changes</a></li>
+                    <li><a href="./employeContract.html"><i class="fa fa-file-contract"></i> Employee Contracts Management</a></li>
+                    <li><a href="./performanceEvaluation.html"><i class="fa fa-chart-line"></i> Performance Evaluation</a></li>
+                    <li><a href="./asssetsMana.html"><i class="fa fa-boxes"></i> Assets Management</a></li>
+                    <li><a href="./requestMana.html"><i class="fa fa-tasks"></i> Requests Management</a></li>
+                    <li><a href="./badgetMana.html"><i class="fa fa-id-badge"></i> Badge Generation</a></li>
+                    <li><a href="./reportMana.html"><i class="fa fa-chart-pie"></i> Reports Management</a></li>
+                    <li><a href="./EmployeeStatusOverview.html"><i class="fa fa-user-plus"></i>Employee Status Overview</a></li>
+
+                </ul>
+            </nav>
+            <button class="btn">Logout</button>
+        </aside>
+    
+
+        <main class="main-content">
+           
+            <header class="header">
+                <div class="header1">
+                    <h1>Welcome, Mr. Otor John</h1>
+                    <p>Today is Saturday, 11th November 2022.</p>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="images/profile.jpg" alt="User">
+                    <div class="text">
+                        <span>Otor John</span>
+                        <span>HR Office</span>
+                    </div>
+                    <i class="fas fa-caret-down dropdown-icon"></i>
+                    <div class="dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="performance-evaluation-container">
+                <h2>Performance Evaluation</h2>
+            
+                <!-- Employee Selection -->
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Employee Selection</h3>
+                    <select id="employee-name">
+                        <option>Select employee</option>
+                        <!-- Employee options here -->
+                    </select>
+                    <p><strong>Title:</strong> [Employee Title]</p>
+                    <p><strong>Department:</strong> [Employee Department]</p>
+                </div>
+            
+                <!-- Evaluation Criteria -->
+                <div class="form-section">
+                    <h3><i class="fas fa-bullseye"></i> Goals and Objectives</h3>
+                    <!-- Goals and evaluation inputs here -->
+                </div>
+            
+                <div class="form-section">
+                    <h3><i class="fas fa-tools"></i> Skills Assessment</h3>
+                    <!-- Skills and rating inputs here -->
+                </div>
+            
+                <div class="form-section">
+                    <h3><i class="fas fa-user-check"></i> Behavioral Competencies</h3>
+                    <!-- Competencies and evaluation inputs here -->
+                </div>
+            
+                <!-- Performance Metrics -->
+                <div class="form-section">
+                    <h3><i class="fas fa-chart-line"></i> Performance Metrics</h3>
+                    <!-- KPI and project contributions inputs here -->
+                </div>
+            
+                <!-- Feedback Section -->
+                <div class="form-section">
+                    <h3><i class="fas fa-comments"></i> Feedback</h3>
+                    <label for="manager-feedback">Manager's Feedback</label>
+                    <textarea id="manager-feedback" placeholder="Enter feedback"></textarea>
+            
+                    <label for="peer-feedback">Peer Feedback</label>
+                    <textarea id="peer-feedback" placeholder="Enter feedback"></textarea>
+            
+                    <label for="self-assessment">Self-Assessment</label>
+                    <textarea id="self-assessment" placeholder="Enter self-assessment"></textarea>
+                </div>
+            
+                <!-- Overall Rating -->
+                <div class="form-section">
+                    <h3><i class="fas fa-star"></i> Overall Rating</h3>
+                    <input type="number" id="overall-rating" placeholder="Enter rating (0-100)">
+                </div>
+            
+                <!-- Development Plan -->
+                <div class="form-section">
+                    <h3><i class="fas fa-chart-bar"></i> Development Plan</h3>
+                    <label for="training-needs">Training Needs</label>
+                    <textarea id="training-needs" placeholder="Enter training needs"></textarea>
+            
+                    <label for="career-path">Career Path</label>
+                    <textarea id="career-path" placeholder="Discuss career progression"></textarea>
+                </div>
+            
+                <!-- Review and Approval -->
+                <div class="form-section">
+                    <h3><i class="fas fa-check-circle"></i> Review and Approval</h3>
+                    <button type="submit" class="submit-button">Submit Evaluation</button>
+                </div>
+            </div>
+            
+                
+</body>        
+</html>

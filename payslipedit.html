@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payslip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>UiUxOtor</h2>
+                <p>ERP System</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html"><img src="images/dash.svg" alt="Dashboard Icon">Dashboard</a></li>
+                    <li><a href="./payroolMana.html"><i class="fa fa-wallet"></i> Payroll Management</a></li>
+                    <li><a href="./payroolChange.html"><i class="fa fa-exchange-alt"></i> Payroll Changes</a></li>
+                    <li><a href="./employeContract.html"><i class="fa fa-file-contract"></i> Employee Contracts Management</a></li>
+                    <li><a href="./performanceEvaluation.html"><i class="fa fa-chart-line"></i> Performance Evaluation</a></li>
+                    <li><a href="./asssetsMana.html"><i class="fa fa-boxes"></i> Assets Management</a></li>
+                    <li><a href="./requestMana.html"><i class="fa fa-tasks"></i> Requests Management</a></li>
+                    <li><a href="./badgetMana.html"><i class="fa fa-id-badge"></i> Badge Generation</a></li>
+                    <li><a href="./reportMana.html"><i class="fa fa-chart-pie"></i> Reports Management</a></li>
+                    <li><a href="./EmployeeStatusOverview.html"><i class="fa fa-user-plus"></i>Employee Status Overview</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Logout</button>
+        </aside>
+    
+
+        <main class="main-content">
+           
+            <header class="header">
+                <div class="header1">
+                    <h1>Welcome, Mr. Otor John</h1>
+                    <p>Today is Saturday, 11th November 2022.</p>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="images/profile.jpg" alt="User">
+                    <div class="text">
+                        <span>Otor John</span>
+                        <span>HR Office</span>
+                    </div>
+                    <i class="fas fa-caret-down dropdown-icon"></i>
+                    <div class="dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <div class="edit-payslip-container">
+                <h2>Edit Payslip for Abubakar Alghazali</h2>
+                
+                <form class="edit-payslip-form">
+                    <div class="form-section">
+                        <h3>Employee Information</h3>
+                        <label for="employee-name">Name:</label>
+                        <input type="text" id="employee-name" name="employeeName" value="Abubakar Alghazali" readonly>
+            
+                        <label for="employee-role">Role:</label>
+                        <input type="text" id="employee-role" name="employeeRole" value="Managing Director" readonly>
+                    </div>
+            
+                    <div class="form-section">
+                        <h3>Salary Structure</h3>
+                        <label for="basic-salary">Basic Salary:</label>
+                        <input type="number" id="basic-salary" name="basicSalary" value="445331">
+            
+                        <label for="housing-allowance">Housing Allowance:</label>
+                        <input type="number" id="housing-allowance" name="housingAllowance" value="222666">
+                        
+                        <!-- Add more fields for other salary components -->
+                    </div>
+            
+                    <div class="form-section">
+                        <h3>Deductions</h3>
+                        <label for="tax-paye">Tax/PAYE:</label>
+                        <input type="number" id="tax-paye" name="taxPaye" value="163696">
+            
+                        <label for="employee-pension">Employee Pension:</label>
+                        <input type="number" id="employee-pension" name="employeePension" value="60565">
+                        
+                        <!-- Add more fields for other deductions -->
+                    </div>
+            
+                    <div class="form-actions">
+                        <button type="submit" class="btn-save">Save Changes</button>
+                        <button type="button" class="btn-cancel" onclick="window.history.back()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            
+         
+                
+</body>
+ </html>

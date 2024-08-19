@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payslip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>UiUxOtor</h2>
+                <p>ERP System</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html"><img src="images/dash.svg" alt="Dashboard Icon">Dashboard</a></li>
+                    <li><a href="./payroolMana.html"><i class="fa fa-wallet"></i> Payroll Management</a></li>
+                    <li><a href="./payroolChange.html"><i class="fa fa-exchange-alt"></i> Payroll Changes</a></li>
+                    <li><a href="./employeContract.html"><i class="fa fa-file-contract"></i> Employee Contracts Management</a></li>
+                    <li><a href="./performanceEvaluation.html"><i class="fa fa-chart-line"></i> Performance Evaluation</a></li>
+                    <li><a href="./asssetsMana.html"><i class="fa fa-boxes"></i> Assets Management</a></li>
+                    <li><a href="./requestMana.html"><i class="fa fa-tasks"></i> Requests Management</a></li>
+                    <li><a href="./badgetMana.html"><i class="fa fa-id-badge"></i> Badge Generation</a></li>
+                    <li><a href="./reportMana.html"><i class="fa fa-chart-pie"></i> Reports Management</a></li>
+                    <li><a href="./EmployeeStatusOverview.html"><i class="fa fa-user-plus"></i>Employee Status Overview</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Logout</button>
+        </aside>
+    
+
+        <main class="main-content">
+           
+            <header class="header">
+                <div class="header1">
+                    <h1>Welcome, Mr. Otor John</h1>
+                    <p>Today is Saturday, 11th November 2022.</p>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="images/profile.jpg" alt="User">
+                    <div class="text">
+                        <span>Otor John</span>
+                        <span>HR Office</span>
+                    </div>
+                    <i class="fas fa-caret-down dropdown-icon"></i>
+                    <div class="dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </header>
+            <!-- Trigger Button -->
+<!-- <button class="btn-create-salary-definition" >
+    <i class="fas fa-plus-circle"></i> Create Salary Definition
+</button> -->
+
+<!-- Create Salary Definition Modal -->
+<div class="create-salary-definition-modal">
+    <div class="modal-content">
+        <h2>Create Salary Definition</h2>
+        <form class="salary-definition-form" onsubmit="event.preventDefault(); saveSalaryDefinition();">
+            <label for="salary-name">Salary Name:</label>
+            <input type="text" id="salary-name" name="salaryName" required>
+
+            <label for="basic-salary">Basic Salary:</label>
+            <input type="number" id="basic-salary" name="basicSalary" required>
+
+            <label for="housing-allowance">Housing Allowance:</label>
+            <input type="number" id="housing-allowance" name="housingAllowance">
+
+            <label for="transport-allowance">Transport Allowance:</label>
+            <input type="number" id="transport-allowance" name="transportAllowance">
+
+            <label for="utility-allowance">Utility Allowance:</label>
+            <input type="number" id="utility-allowance" name="utilityAllowance">
+
+            <label for="tax-deduction">Tax Deduction:</label>
+            <input type="number" id="tax-deduction" name="taxDeduction">
+
+            <label for="pension-deduction">Pension Deduction:</label>
+            <input type="number" id="pension-deduction" name="pensionDeduction">
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Save</button>
+                <button type="button" class="btn-cancel" onclick="closeCreateSalaryDefinitionModal()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openCreateSalaryDefinitionModal() {
+    document.querySelector('.create-salary-definition-modal').style.display = 'flex';
+}
+
+function closeCreateSalaryDefinitionModal() {
+    document.querySelector('.create-salary-definition-modal').style.display = 'none';
+}
+
+function saveSalaryDefinition() {
+    // Logic to save the salary definition
+    alert("Salary definition saved successfully!");
+    closeCreateSalaryDefinitionModal();
+}
+
+</script>
+            
+                
+            </body>
+            </html>

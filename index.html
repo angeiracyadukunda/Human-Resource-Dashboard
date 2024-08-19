@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>UiUxOtor</h2>
+                <p>ERP System</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#dashboard"><img src="images/dash.svg" alt="Dashboard Icon">Dashboard</a></li>
+                    <li>
+                        <a href="./payroolMana.html" >
+                          <i class="fa fa-wallet"></i> Payroll Management
+                        </a>
+                      </li>
+                      
+                    <li><a href="./payroolChange.html"><i class="fa fa-exchange-alt"></i> Payroll Changes</a></li>
+                    <li><a href="./employeContract.html"><i class="fa fa-file-contract"></i> Employee Contracts Management</a></li>
+                    <li><a href="./performanceEvaluation.html"><i class="fa fa-chart-line"></i> Performance Evaluation</a></li>
+                    <li><a href="./asssetsMana.html"><i class="fa fa-boxes"></i> Assets Management</a></li>
+                    <li><a href="./requestMana.html"><i class="fa fa-tasks"></i> Requests Management</a></li>
+                    <li><a href="./badgetMana.html"><i class="fa fa-id-badge"></i> Badge Generation</a></li>
+                    <li><a href="./reportMana.html"><i class="fa fa-chart-pie"></i> Reports Management</a></li>
+                    <li><a href="./EmployeeStatusOverview.html"><i class="fa fa-user-plus"></i>Employee Status Overview</a></li>
+
+                   
+                </ul>
+            </nav>
+            <button class="btn">Logout</button>
+        </aside>
+    
+
+        <main class="main-content">
+           
+            <header class="header">
+                <div class="header1">
+                    <h1>Welcome, Mr. Otor John</h1>
+                    <p>Today is Saturday, 11th November 2022.</p>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="images/profile.jpg" alt="User">
+                    <div class="text">
+                        <span>Otor John</span>
+                        <span>HR Office</span>
+                    </div>
+                    <i class="fas fa-caret-down dropdown-icon"></i>
+                    <div class="dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </header>
+          
+            <section id="dashboard" class="content">
+                <div class="dashboard-header">
+                    <h1>Dashboard</h1>
+                </div>
+    
+                <div class="dashboard-metrics">
+                    <div class="metric-box">
+                        <i class="fas fa-users"></i>
+                        <h2>Total Employees</h2>
+                        <p>200</p>
+                    </div>
+                    <div class="metric-box">
+                        <i class="fas fa-user-plus"></i>
+                        <h2>New Hires</h2>
+                        <p>5</p>
+                    </div>
+                    <div class="metric-box">
+                        <i class="fas fa-user-minus"></i>
+                        <h2>Terminations</h2>
+                        <p>2</p>
+                    </div>
+                    <div class="metric-box">
+                        <i class="fas fa-calendar-times"></i>
+                        <h2>Contract Expirations</h2>
+                        <p>3</p>
+                    </div>
+                    <div class="metric-box">
+                        <i class="fas fa-tasks"></i>
+                        <h2>Pending Requests</h2>
+                        <p>7</p>
+                    </div>
+                </div>
+    
+                <!-- First Row: Recent Activities and Alerts -->
+                <div class="section-row">
+                    <div class="section-column recent-activities">
+                        <h2><i class="fas fa-history"></i> Recent Activities</h2>
+                        <ul>
+                            <li><i class="fas fa-user-plus"></i> John Doe was hired as a Software Engineer</li>
+                            <li><i class="fas fa-calendar-times"></i> Jane Smith's contract expires in 10 days</li>
+                            <li><i class="fas fa-exchange-alt"></i> Payroll updated for department X</li>
+                            <li><i class="fas fa-chart-line"></i> Performance review completed for Mike Johnson</li>
+                        </ul>
+                    </div>
+                    <div class="section-column alerts">
+                        <h2><i class="fas fa-bell"></i> Alerts & Notifications</h2>
+                        <p><i class="fas fa-calendar-times"></i> 3 contracts are expiring soon</p>
+                        <p><i class="fas fa-exclamation-circle"></i> 2 pending approvals</p>
+                        <p><i class="fas fa-birthday-cake"></i> Upcoming birthdays: August 15 - Sarah Connor</p>
+                    </div>
+                </div>
+    
+                <!-- Second Row: Quick Links and Visualizations -->
+                <div class="section-row">
+                    <div class="section-column quick-links">
+                        <h2><i class="fas fa-link"></i> Quick Links</h2>
+                        <a href="#employee-contracts"><i class="fas fa-user-plus"></i> Add New Employee</a>
+                        <a href="#reports-management"><i class="fas fa-file-alt"></i> Generate Report</a>
+                        <a href="#payroll-management"><i class="fas fa-wallet"></i> Manage Payroll</a>
+                    </div>
+                    <div class="section-column visualizations">
+                        <h2><i class="fas fa-chart-pie"></i> Employee Distribution by Department</h2>
+                        <!-- Placeholder for chart/graph -->
+                        <div class="chart-placeholder">Chart goes here</div>
+                    </div>
+                </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdownIcon = document.querySelector(".dropdown-icon");
+            const dropdownMenu = document.querySelector(".dropdown");
+
+            dropdownIcon.addEventListener("click", function() {
+                if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+                    dropdownMenu.style.display = "block";
+                } else {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.addEventListener("click", function(event) {
+                if (!event.target.matches('.dropdown-icon') && !event.target.closest('.user-profile')) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+        });
+
+        function createPayslip() {
+  // Logic to create a payslip goes here
+  console.log("Payslip created!");
+  // For example, you could generate a PDF, redirect to another page, or show a modal
+}
+    </script>
+</body>
+</html>

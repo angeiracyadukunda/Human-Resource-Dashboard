@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payslip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>UiUxOtor</h2>
+                <p>ERP System</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#dashboard"><img src="images/dash.svg" alt="Dashboard Icon">Dashboard</a></li>
+                    <li>
+                        <a href="./payroolMana.html" >
+                          <i class="fa fa-wallet"></i> Payroll Management
+                        </a>
+                      </li>
+                      
+                      <li><a href="./payroolChange.html"><i class="fa fa-exchange-alt"></i> Payroll Changes</a></li>
+                      <li><a href="./employeContract.html"><i class="fa fa-file-contract"></i> Employee Contracts Management</a></li>
+                      <li><a href="./performanceEvaluation.html"><i class="fa fa-chart-line"></i> Performance Evaluation</a></li>
+                      <li><a href="./asssetsMana.html"><i class="fa fa-boxes"></i> Assets Management</a></li>
+                      <li><a href="./requestMana.html"><i class="fa fa-tasks"></i> Requests Management</a></li>
+                      <li><a href="./badgetMana.html"><i class="fa fa-id-badge"></i> Badge Generation</a></li>
+                      <li><a href="./reportMana.html"><i class="fa fa-chart-pie"></i> Reports Management</a></li>
+                      <li><a href="./EmployeeStatusOverview.html"><i class="fa fa-user-plus"></i>Employee Status Overview</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Logout</button>
+        </aside>
+    
+
+        <main class="main-content">
+           
+            <header class="header">
+                <div class="header1">
+                    <h1>Welcome, Mr. Otor John</h1>
+                    <p>Today is Saturday, 11th November 2022.</p>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="images/profile.jpg" alt="User">
+                    <div class="text">
+                        <span>Otor John</span>
+                        <span>HR Office</span>
+                    </div>
+                    <i class="fas fa-caret-down dropdown-icon"></i>
+                    <div class="dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="reports-container">
+                <div class="header">
+                    <h1>Reports Management</h1>
+                    <button class="btn-generate-report"><i class="fas fa-file-alt"></i> Generate Report</button>
+                </div>
+        
+                <div class="report-categories">
+                    <label for="report-type">Select Report Type:</label>
+                    <select id="report-type">
+                        <option value="payroll">Payroll Report</option>
+                        <option value="attendance">Attendance Report</option>
+                        <option value="performance">Performance Report</option>
+                        <option value="leave">Leave Report</option>
+                    </select>
+        
+                    <label for="date-range">Select Date Range:</label>
+                    <input type="date" id="start-date"> to <input type="date" id="end-date">
+                </div>
+        
+                <div class="search-filter">
+                    <input type="text" placeholder="Search Reports" class="search-bar">
+                    <button class="btn-filter"><i class="fas fa-filter"></i> Apply Filters</button>
+                </div>
+        
+                <div class="reports-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Report Name</th>
+                                <th>Type</th>
+                                <th>Date Created</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monthly Payroll Report</td>
+                                <td>Payroll</td>
+                                <td>01/08/2024</td>
+                                <td>Finalized</td>
+                                <td>
+                                    <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                                    <button class="btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn-export"><i class="fas fa-file-export"></i> Export</button>
+                                    <button class="btn-delete"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <!-- More rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

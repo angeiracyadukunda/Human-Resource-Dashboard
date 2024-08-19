@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payslip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>UiUxOtor</h2>
+                <p>ERP System</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#dashboard"><img src="images/dash.svg" alt="Dashboard Icon">Dashboard</a></li>
+                    <li><a href="#payroll-management"><i class="fa fa-wallet"></i> Payroll Management</a></li>
+                    <li><a href="./payroolChange.html"><i class="fa fa-exchange-alt"></i> Payroll Changes</a></li>
+                    <li><a href="./employeContract.html"><i class="fa fa-file-contract"></i> Employee Contracts Management</a></li>
+                    <li><a href="./performanceEvaluation.html"><i class="fa fa-chart-line"></i> Performance Evaluation</a></li>
+                    <li><a href="./asssetsMana.html"><i class="fa fa-boxes"></i> Assets Management</a></li>
+                    <li><a href="./requestMana.html"><i class="fa fa-tasks"></i> Requests Management</a></li>
+                    <li><a href="./badgetMana.html"><i class="fa fa-id-badge"></i> Badge Generation</a></li>
+                    <li><a href="./reportMana.html"><i class="fa fa-chart-pie"></i> Reports Management</a></li>
+                    <li><a href="./EmployeeStatusOverview.html"><i class="fa fa-user-plus"></i>Employee Status Overview</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Logout</button>
+        </aside>
+    
+
+        <main class="main-content">
+           
+            <header class="header">
+                <div class="header1">
+                    <h1>Welcome, Mr. Otor John</h1>
+                    <p>Today is Saturday, 11th November 2022.</p>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="images/profile.jpg" alt="User">
+                    <div class="text">
+                        <span>Otor John</span>
+                        <span>HR Office</span>
+                    </div>
+                    <i class="fas fa-caret-down dropdown-icon"></i>
+                    <div class="dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="payroll-history-container">
+                <div class="header">
+                    <h3>Employee Payroll History</h3>
+                    <button class="btn-generate-payroll" onclick="window.location.href='generatePayrool.html';"><i class="fas fa-file-invoice-dollar"></i> Generate Payroll</button>
+                </div>
+                
+                <div class="payroll-history-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S/N</th>
+                                <th>Payment name</th>
+                                <th>Designation</th>
+                                <th>Date generated</th>
+                                <th>Payment month</th>
+                                <th>Payment year</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Monthly salary</td>
+                                <td>Operations Department</td>
+                                <td>30/01/2023</td>
+                                <td>January</td>
+                                <td>2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td><a href="#" class="view-more">View more</a></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>Monthly salary</td>
+                                <td>Accounts Department</td>
+                                <td>30/12/2023</td>
+                                <td>January</td>
+                                <td>2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td><a href="#" class="view-more">View more</a></td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>Monthly salary</td>
+                                <td>Operations Department</td>
+                                <td>30/11/2022</td>
+                                <td>November</td>
+                                <td>2022</td>
+                                <td><span class="status paid">Paid</span></td>
+                                <td><a href="#" class="view-more">View more</a></td>
+                            </tr>
+                            <!-- Add more rows as necessary -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

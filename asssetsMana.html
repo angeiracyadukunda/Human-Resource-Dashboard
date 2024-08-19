@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payslip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>UiUxOtor</h2>
+                <p>ERP System</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html"><img src="images/dash.svg" alt="Dashboard Icon">Dashboard</a></li>
+                    <li><a href="./payroolMana.html"><i class="fa fa-wallet"></i> Payroll Management</a></li>
+                    <li><a href="./payroolChange.html"><i class="fa fa-exchange-alt"></i> Payroll Changes</a></li>
+                    <li><a href="./employeContract.html"><i class="fa fa-file-contract"></i> Employee Contracts Management</a></li>
+                    <li><a href="./performanceEvaluation.html"><i class="fa fa-chart-line"></i> Performance Evaluation</a></li>
+                    <li><a href="./asssetsMana.html"><i class="fa fa-boxes"></i> Assets Management</a></li>
+                    <li><a href="./requestMana.html"><i class="fa fa-tasks"></i> Requests Management</a></li>
+                    <li><a href="./badgetMana.html"><i class="fa fa-id-badge"></i> Badge Generation</a></li>
+                    <li><a href="./reportMana.html"><i class="fa fa-chart-pie"></i> Reports Management</a></li>
+                    <li><a href="./EmployeeStatusOverview.html"><i class="fa fa-user-plus"></i>Employee Status Overview</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Logout</button>
+        </aside>
+    
+
+        <main class="main-content">
+           
+            <header class="header">
+                <div class="header1">
+                    <h1>Welcome, Mr. Otor John</h1>
+                    <p>Today is Saturday, 11th November 2022.</p>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="images/profile.jpg" alt="User">
+                    <div class="text">
+                        <span>Otor John</span>
+                        <span>HR Office</span>
+                    </div>
+                    <i class="fas fa-caret-down dropdown-icon"></i>
+                    <div class="dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="assets-container">
+                <h2>Assets Management</h2>
+            
+                <!-- Summary Section -->
+                <div class="summary-section">
+                    <div class="summary-card">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Total Assets</h3>
+                        <p>500</p>
+                    </div>
+                    <div class="summary-card">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Assigned Assets</h3>
+                        <p>300</p>
+                    </div>
+                    <div class="summary-card">
+                        <i class="fas fa-box-open"></i>
+                        <h3>Unassigned Assets</h3>
+                        <p>150</p>
+                    </div>
+                    <div class="summary-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Assets Due for Maintenance</h3>
+                        <p>50</p>
+                    </div>
+                </div>
+            
+                <!-- Search and Filter Section -->
+                <div class="search-filter-section">
+                    <input type="text" placeholder="Search by Asset Name or ID">
+                    <select>
+                        <option value="">Filter by Status</option>
+                        <option value="assigned">Assigned</option>
+                        <option value="unassigned">Unassigned</option>
+                        <option value="maintenance">Under Maintenance</option>
+                    </select>
+                    <button class="btn-search"><i class="fas fa-search"></i> Search</button>
+                </div>
+            
+                <!-- Assets Table -->
+                <table class="assets-table">
+                    <thead>
+                        <tr>
+                            <th>Asset ID</th>
+                            <th>Asset Name</th>
+                            <th>Category</th>
+                            <th>Assigned To</th>
+                            <th>Status</th>
+                            <th>Purchase Date</th>
+                            <th>Warranty Expiry</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Dell Laptop</td>
+                            <td>Electronics</td>
+                            <td>John Doe</td>
+                            <td><i class="fas fa-user-check"></i> Assigned</td>
+                            <td>01/01/2023</td>
+                            <td>01/01/2024</td>
+                            <td>
+                                <button class="btn-action"><i class="fas fa-eye"></i> View</button>
+                                <button class="btn-action"><i class="fas fa-clipboard-list"></i> Edit</button>
+                                <button class="btn-action"><i class="fas fa-tools"></i> Maintenance</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+            
+
+            <div class="assets-management-container">
+                <h2>Assets Management</h2>
+                
+                <!-- Add New Asset Button -->
+                <button class="add-asset-button">
+                    <i class="fas fa-plus"></i> Add New Asset
+                </button>
+                
+                <!-- Assets List -->
+                <div class="assets-list-section">
+                    <h3>Existing Assets</h3>
+                    <table class="assets-table">
+                        <thead>
+                            <tr>
+                                <th>Asset Name</th>
+                                <th>Category/Type</th>
+                                <th>Purchase Date</th>
+                                <th>Cost/Value</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Asset items will be populated here -->
+                            <tr>
+                                <td>HP Laptop</td>
+                                <td>IT Equipment</td>
+                                <td>2023-08-12</td>
+                                <td>$1200</td>
+                                <td>In Use</td>
+                                <td>
+                                    <button class="edit-button"><i class="fas fa-edit"></i></button>
+                                    <button class="delete-button"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Add/Edit Asset Form -->
+                <div class="add-asset-form">
+                    <h3>Add New Asset</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="asset-name">Asset Name</label>
+                            <input type="text" id="asset-name" placeholder="Enter asset name">
+                        </div>
+                        <div class="form-group">
+                            <label for="asset-category">Category/Type</label>
+                            <select id="asset-category">
+                                <option>Select category</option>
+                                <option>IT Equipment</option>
+                                <option>Furniture</option>
+                                <!-- More categories -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="purchase-date">Purchase Date</label>
+                            <input type="date" id="purchase-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="asset-cost">Cost/Value</label>
+                            <input type="number" id="asset-cost" placeholder="Enter cost or value">
+                        </div>
+                        <div class="form-group">
+                            <label for="asset-status">Current Status</label>
+                            <select id="asset-status">
+                                <option>Select status</option>
+                                <option>In Use</option>
+                                <option>Under Maintenance</option>
+                                <option>Available</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="asset-description">Description</label>
+                            <textarea id="asset-description" placeholder="Enter description"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Save Asset</button>
+                        <button type="button" class="cancel-button">Cancel</button>
+                    </form>
+                </div>
+            </div>
+            
+            
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
